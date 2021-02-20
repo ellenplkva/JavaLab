@@ -57,8 +57,8 @@ public class ComplexNum {
 
     public String GetTrigForm (){
         double r = Math.sqrt(Math.pow(this.valid, 2) + Math.pow(this.imag, 2));
-        if(r>0){
-            double a = Math.atan(this.imag / this.valid)*180/Math.PI;
+        if(r > 0){
+            double a = Math.atan(this.imag / this.valid) * 180 / Math.PI;
             return String.format("%.2f * ( cos( %.2f ) + i*( sin( %.2f ) )", r,a,a);
         }
         else
