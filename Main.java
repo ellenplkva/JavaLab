@@ -11,5 +11,14 @@ public class Main {
 
       System.out.println("Тригонометрическая форма: " + number1.GetTrigForm());
       System.out.println("Алгебраическая форма: " + number1.GetAlgForm());
+    
+      Matrix data = new Matrix(2,2);
+
+
+      data.print();
+      data.set(1,1,number1);
+      System.out.println("Матрица 1\n" );
+      data.print();
+
   }
 }
